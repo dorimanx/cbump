@@ -17,6 +17,8 @@ cbump [-f|--flash] [-a|--avexado] [stdin] [stdin]
 Cbump indentify partition by file name, (e.g, If your use -f with a recovery.img file, cbump flash as recovery).
 ```
 
+The flash function uses MSM identifier to detect partition block, Tested only on LG G2, Probably works too with LG G3 and others LG devices powered by Qualcomm.
+
 References:
 
 * https://android.googlesource.com/platform/system/core
