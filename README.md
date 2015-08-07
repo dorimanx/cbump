@@ -7,14 +7,13 @@ So, you can bump any kernel or recovery directly on your device.
 The full cmdline interface:
 
 ```
-cbump [-f|--flash] [-a|--avexado] [stdin] [stdin]
+shell@g2:/ $ cbump
+usage: cbump [-f|--flash] [-a|--avexado] [stdin] [stdin]
 
 [stdin] : Bump file if not bumped, output is writed with 'c' prefix.
 [-f|--flash] : Check if file is bumped and flash.
 [-a|--avexado] : Check if file is bumped, bump file if not and flash.
-[stdin] [stdin] : Same as first, but you define output.
-
-Cbump indentify partition by file name, (e.g, If your use -f with a recovery.img file, cbump flash as recovery).
+Cbump indentify partition by file name, (e.g, If you use -f with a recovery.img file, cbump flash as recovery)
 ```
 
 The flash function uses MSM identifier to detect partition block, Tested only on LG G2, Probably works too with LG G3 and others LG devices powered by Qualcomm.
